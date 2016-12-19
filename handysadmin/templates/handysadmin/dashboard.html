@@ -1,0 +1,69 @@
+{% extends 'handysadmin/base.html' %}
+
+{% block content %}
+<ol class="breadcrumb mb-0">
+    <!--<li class="breadcrumb-item">Home</li>-->
+    <!--<li class="breadcrumb-item"><a href="#">Admin</a></li>-->
+    <li class="breadcrumb-item active">Dashboard</li>
+</ol>
+<li>dashboard에 필요한 지표들 수집하여 구현. 디자인은 Widgets에서 선택하여 구현</li>
+<div class="container-fluid">
+
+    <div class="animated fadeIn">
+
+        <div class="card-group mb-1">
+            <div class="card">
+                <div class="card-block">
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-people"></i>
+                    </div>
+                    <div class="h4 mb-0">87.500</div>
+                    <small class="text-muted text-uppercase font-weight-bold">Visitors</small>
+                    <progress class="progress progress-xs progress-info mt-1 mb-0" value="25" max="100">25%</progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-user-follow"></i>
+                    </div>
+                    <div class="h4 mb-0">385</div>
+                    <small class="text-muted text-uppercase font-weight-bold">New Clients</small>
+                    <progress class="progress progress-xs progress-success mt-1 mb-0" value="25" max="100">25%</progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-basket-loaded"></i>
+                    </div>
+                    <div class="h4 mb-0">1238</div>
+                    <small class="text-muted text-uppercase font-weight-bold">Products sold</small>
+                    <progress class="progress progress-xs progress-warning mt-1 mb-0" value="25" max="100">25%</progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-pie-chart"></i>
+                    </div>
+                    <div class="h4 mb-0">28%</div>
+                    <small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
+                    <progress class="progress progress-xs progress-primary mt-1 mb-0" value="25" max="100">25%</progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-speedometer"></i>
+                    </div>
+                    <div class="h4 mb-0">5:34:11</div>
+                    <small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
+                    <progress class="progress progress-xs progress-danger mt-1 mb-0" value="25" max="100">25%</progress>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.conainer-fluid -->
+{% endblock %}

@@ -1,0 +1,143 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Real - Bootstrap 4 Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+
+    <title>Handys - Admin v2.0</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.css' %}" >
+
+    <!-- Premium Icons -->
+    <link rel="stylesheet" href="{% static 'css/glyphicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/glyphicons-filetypes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/glyphicons-social.css' %}">
+
+    <!-- Main styles for this application -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body class="navbar-fixed sidebar-nav fixed-nav">
+    <header class="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
+            <a class="navbar-brand" href="#">Handys Logo</a>
+            <ul class="nav navbar-nav hidden-md-down float-xs-left">
+                <li class="nav-item b-r-1">
+                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
+                </li>
+
+            </ul>
+            <form class="form-inline float-xs-left px-2 hidden-md-down">
+                <i class="fa fa-search"></i>
+                <input class="form-control" type="text" placeholder="Are you looking for something?">
+            </form>
+
+        </div>
+    </header>
+
+    <div class="sidebar">
+
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="tag tag-info">NEW</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> 핸디즈톡 </a>
+                </li>
+
+                <li class="divider"></li>
+                <li class="nav-title">
+                    First Elements
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="components-buttons.html"><i class="icon-puzzle"></i> Buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="components-social-buttons.html"><i class="icon-puzzle"></i> Social Buttons</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="divider"></li>
+                <li class="nav-title">
+                    Second Elements
+                </li>
+
+                <li class="divider"></li>
+                <li class="nav-title">
+                    Third Elements
+                </li>
+
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+        {% include 'handysadmin/content.html' %}
+        <!--&lt;!&ndash; Breadcrumb &ndash;&gt;-->
+        <!--<ol class="breadcrumb mb-0">-->
+            <!--<li class="breadcrumb-item">Home</li>-->
+            <!--<li class="breadcrumb-item"><a href="#">Admin</a></li>-->
+            <!--<li class="breadcrumb-item active">Dashboard</li>-->
+        <!--</ol>-->
+
+    </main>
+
+
+    <footer class="footer">
+        <span class="text-left">
+            © 2016 <a href="www.handys.co.kr">Handys</a> Inc.
+        </span>
+        <span class="pull-right">
+            사업자등록번호: 152-86-00358 &nbsp;&nbsp;  대표: 정승호 &nbsp;&nbsp; Tel: 070-8972-8846
+        </span>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="{% static 'js/libs/jquery.min.js' %}"></script>
+    <script src="{% static 'js/libs/tether.min.js' %}"></script>
+    <script src="{% static 'js/libs/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/libs/pace.min.js' %}"></script>
+
+
+    <!-- Plugins and scripts required by all views -->
+    <script src="{% static 'js/libs/Chart.min.js' %}"></script>
+
+
+    <!-- GenesisUI main scripts -->
+    <script src="{% static 'js/app.js' %}"></script>
+
+    <!-- Plugins and scripts required by this views -->
+    <script src="{% static 'js/libs/toastr.min.js' %}"></script>
+    <script src="{% static 'js/libs/gauge.min.js' %}"></script>
+    <script src="{% static 'js/libs/moment.min.js' %}"></script>
+    <script src="{% static 'js/libs/daterangepicker.js' %}"></script>
+
+
+    <!-- Custom scripts required by this view -->
+    <script src="{% static 'js/views/main.js' %}"></script>
+
+</body>
+
+</html>

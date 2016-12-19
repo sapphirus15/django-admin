@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+handysenv
+db.sqlite3
+.DS_Store
+
